@@ -1,0 +1,132 @@
+import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+*{
+  box-sizing: border-box;
+}
+
+img{
+  display: block;
+  max-width: 100%;
+}
+
+body{
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  letter-spacing: 1.5px;
+}
+
+.section__titulo{
+  text-align: center;
+  font-size: 40px;
+  color: #FBA919;
+}
+
+.contenedor{
+  margin:auto;
+  width: 99%;
+}
+/*---------------------------Estilos del HEADER---------------------------*/
+.header{
+  height: 60px;
+}
+.header .contenedor{
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo, .icon-menu{
+  margin: 5px;
+  color: #fff;
+  font-size: 80%; /*esto no esta en el codigo original, lo agregue para visualizarlo mejor en responsive*/
+}
+
+.logo{
+  font-size: 20px;
+}
+
+.icon-menu{
+  display: block;
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  background: #FBA919;
+  text-align: center;
+  line-height: 45px;
+  border-radius: 5px;
+  margin-left:  auto;
+  cursor: pointer;
+}
+/*---------------------------Estilos del MENU---------------------------*/
+.nav {
+  position: absolute;
+  top: 60px;
+  left: -100%;
+  width: 100%;
+  transition: all 0.4s;
+}
+
+.menu{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu__link {
+  display: block;
+  padding: 15px;
+  background: #FBA919;
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu__link:hover, .select {
+  background: white;
+  color: #FBA919;
+}
+
+.mostrar{
+  left: 0;
+}
+/*----------------------Estilos baner----------------------*/
+
+.banner{
+  margin-top: -60px;
+  position: relative;
+  z-index: -1000;
+  margin-bottom: 20px;
+  }
+
+.banner .contenedor{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translateX(-50%) translateY(-50%);
+  width: 100%;
+  color: #fff;
+}
+/*----------------------Estilos de footer----------------------*/
+
+.footer{
+  background: #FBA919;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.footer .social [class^="icon-"] {
+  display: inline-block;
+  color: #333;
+  text-decoration: none;
+  font-size: 30px;
+  padding: 10px;
+  background: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  line-height: 40px;
+}
